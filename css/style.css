@@ -1,0 +1,57 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --whiteColor: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+    --fontSize_p: 15px;
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightGray);
+    font-family: "Outfit", sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 900;
+    font-family: "Outfit", sans-serif;
+}
+p{
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.card{
+    width: 320px;
+    background: var(--whiteColor);
+    padding: 15px;
+    border-radius: 15px;
+}
+.card img{
+    border-radius: 10px;
+}
+.card-body{
+    padding: 20px 15px;
+    text-align: center;
+}
+.card-body h4{
+    color: var(--darkBlue);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.card-body p{
+    font-size: var(--fontSize_p);
+    color: var(--grayishBlue);
+    margin-bottom: 15px;
+}
